@@ -3,7 +3,7 @@
         <!--logo-->
         <div class="logo">
             <nuxt-link to="/">
-                <!-- <img src="~/assets/img/logo.png"> -->
+                <img src="../assets/img/logo.png">
             </nuxt-link>
         </div>
         <!--主体部分-->

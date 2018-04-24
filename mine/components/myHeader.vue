@@ -4,7 +4,7 @@
             <div class="width-limit">
                 <!--logo-->
                 <nuxt-link class="logo" to="/">
-                    <!-- <img src="~/assets/img/nav-logo.png"> -->
+                    <img src="../assets/img/nav-logo.png">
                 </nuxt-link>
                 <!--右上角，写文章-->
                 <nuxt-link to="/write" class="write-btn">
@@ -15,7 +15,7 @@
                 <div class="user" @mouseover="userShow=true" @mouseleave="userShow=false">
                     <div class="drop-down">
                         <nuxt-link to="/u/123" class="avatar">
-                            <!-- <img src="~/assets/img/default-avatar.jpg"> -->
+                            <img src="../assets/img/default-avatar.jpg">
                         </nuxt-link>
                     </div>
                     <ul class="drop-menu" v-show="userShow">
@@ -54,67 +54,69 @@
                 <!--右上角，登录和注册-->
                 <!--导航部分-->
                 <div class="container">
-                    <button class="navbar-toggle" @click="navShow==true?navShow=false:navShow=true">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <transition enter-active-class="animated fadeInDown" leave-active-class="animated fadeOutUp">
-                        <ul class="nav-list" v-show="navShow">
-                            <li>
-                                <nuxt-link class="active" to="/">
-                                    <i class="fa fa-compass"></i>
-                                    <span>发现</span>
-                                </nuxt-link>
-                            </li>
-                            <li>
-                                <nuxt-link to="/follow">
-                                    <i class="fa fa-book"></i>
-                                    <span>关注</span>
-                                </nuxt-link>
-                            </li>
-                            <li class="user" @mouseover="notifyShow=true" @mouseleave="notifyShow=false">
-                                <nuxt-link to="/notify">
-                                    <i class="fa fa-bell-o"></i>
-                                    <span>消息</span>
-                                </nuxt-link>
-                                <ul class="drop-menu" v-show="notifyShow">
-                                    <li>
-                                        <nuxt-link to="/">
-                                            <i class="fa fa-comment-o"></i>
-                                            评论
-                                        </nuxt-link>
-                                    </li>
-                                    <li>
-                                        <nuxt-link to="/">
-                                            <i class="fa fa-envelope-o"></i>
-                                            简信
-                                        </nuxt-link>
-                                    </li>
-                                    <li>
-                                        <nuxt-link to="/">
-                                            <i class="fa fa-plus-square-o"></i>
-                                            关注
-                                        </nuxt-link>
-                                    </li>
-                                    <li>
-                                        <nuxt-link to="/">
-                                            <i class="fa fa-heart-o"></i>
-                                            喜欢和赞
-                                        </nuxt-link>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="search">
-                                <form method="post">
-                                    <input type="text" placeholder="搜索" class="search-input">
-                                    <a href="#" class="search-btn">
-                                        <i class="fa fa-search"></i>
-                                    </a>
-                                </form>
-                            </li>
-                        </ul>
-                    </transition>
+                    <div class="row">
+                        <button class="navbar-toggle" @click="navShow==true?navShow=false:navShow=true">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <transition enter-active-class="animated fadeInDown" leave-active-class="animated fadeOutUp">
+                            <ul class="nav-list" v-show="navShow">
+                                <li>
+                                    <nuxt-link class="active" to="/">
+                                        <i class="fa fa-compass"></i>
+                                        <span>发现</span>
+                                    </nuxt-link>
+                                </li>
+                                <li>
+                                    <nuxt-link to="/follow">
+                                        <i class="fa fa-book"></i>
+                                        <span>关注</span>
+                                    </nuxt-link>
+                                </li>
+                                <li class="user" @mouseover="notifyShow=true" @mouseleave="notifyShow=false">
+                                    <nuxt-link to="/notify">
+                                        <i class="fa fa-bell-o"></i>
+                                        <span>消息</span>
+                                    </nuxt-link>
+                                    <ul class="drop-menu" v-show="notifyShow">
+                                        <li>
+                                            <nuxt-link to="/">
+                                                <i class="fa fa-comment-o"></i>
+                                                评论
+                                            </nuxt-link>
+                                        </li>
+                                        <li>
+                                            <nuxt-link to="/">
+                                                <i class="fa fa-envelope-o"></i>
+                                                简信
+                                            </nuxt-link>
+                                        </li>
+                                        <li>
+                                            <nuxt-link to="/">
+                                                <i class="fa fa-plus-square-o"></i>
+                                                关注
+                                            </nuxt-link>
+                                        </li>
+                                        <li>
+                                            <nuxt-link to="/">
+                                                <i class="fa fa-heart-o"></i>
+                                                喜欢和赞
+                                            </nuxt-link>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="search">
+                                    <form method="post">
+                                        <input type="text" placeholder="搜索" class="search-input">
+                                        <a href="#" class="search-btn">
+                                            <i class="fa fa-search"></i>
+                                        </a>
+                                    </form>
+                                </li>
+                            </ul>
+                        </transition>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -210,6 +212,7 @@
         border:1px solid #eee;
     }
     nav .user .drop-menu {
+        background:#fff;
         position:absolute;
         left:0;
         box-shadow: 0 0 8px rgba(0,0,0,.1);
