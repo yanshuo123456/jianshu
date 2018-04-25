@@ -3,9 +3,10 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
-const _3c2a0b3a = () => import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */).then(m => m.default || m)
-const _424bfe93 = () => import('..\\pages\\sign-up.vue' /* webpackChunkName: "pages/sign-up" */).then(m => m.default || m)
-const _2db5a81d = () => import('..\\pages\\sign-in.vue' /* webpackChunkName: "pages/sign-in" */).then(m => m.default || m)
+const _0c4cad4d = () => import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */).then(m => m.default || m)
+const _d7633034 = () => import('..\\pages\\sign-up.vue' /* webpackChunkName: "pages/sign-up" */).then(m => m.default || m)
+const _7fb81170 = () => import('..\\pages\\sign-in.vue' /* webpackChunkName: "pages/sign-in" */).then(m => m.default || m)
+const _2b4c0adf = () => import('..\\pages\\p\\_id.vue' /* webpackChunkName: "pages/p-id" */).then(m => m.default || m)
 
 
 
@@ -43,18 +44,23 @@ export function createRouter () {
     routes: [
 		{
 			path: "/",
-			component: _3c2a0b3a,
+			component: _0c4cad4d,
 			name: "index"
 		},
 		{
 			path: "/sign-up",
-			component: _424bfe93,
+			component: _d7633034,
 			name: "sign-up"
 		},
 		{
 			path: "/sign-in",
-			component: _2db5a81d,
+			component: _7fb81170,
 			name: "sign-in"
+		},
+		{
+			path: "/p/:id?",
+			component: _2b4c0adf,
+			name: "p-id"
 		}
     ],
     fallback: false

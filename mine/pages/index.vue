@@ -36,12 +36,12 @@
                     <div class="list-container">
                         <ul class="note-list">
                             <li class="have-img">
-                                <nuxt-link to="/p/123" class="wrap-img">
+                                <nuxt-link to="/p/_id" class="wrap-img">
                                     <img src="../assets/img/note.jpg">
                                 </nuxt-link>
                                 <div class="content">
                                     <div class="author">
-                                        <nuxt-link to="/p/123" class="avatar">
+                                        <nuxt-link to="/p/_id" class="avatar">
                                             <img src="../assets/img/default-avatar.jpg">
                                         </nuxt-link>
                                         <div class="info">
@@ -51,17 +51,17 @@
                                             </span>
                                         </div>
                                     </div>
-                                    <nuxt-link class="title" to="/p/123">佛系程序员的月薪五万指南</nuxt-link>
+                                    <nuxt-link class="title" to="/p/_id">佛系程序员的月薪五万指南</nuxt-link>
                                     <div class="abstruct">
                                         摘要：大师：很简单，我这里有一份佛系月薪 5 万指南，我看你骨骼清奇、脑门光亮，一看就是将要大富大贵之人，这份指南可以助你快速实现小目标！ 程序员问大师…… 青年：大师，你看...
                                     </div>
                                     <div class="meta">
                                         <nuxt-link to="/c/123" class="collection-tag">社会与法</nuxt-link>
-                                        <nuxt-link to="/p/123">
+                                        <nuxt-link to="/p/_id">
                                             <i class="fa fa-eye"></i>
                                             1500
                                         </nuxt-link>
-                                        <nuxt-link to="/p/123">
+                                        <nuxt-link to="/p/_id">
                                             <i class="fa fa-comment"></i>
                                             100
                                         </nuxt-link>
@@ -75,7 +75,7 @@
                             <li>
                                 <div class="content">
                                     <div class="author">
-                                        <nuxt-link to="/p/123" class="avatar">
+                                        <nuxt-link to="/p/_id" class="avatar">
                                             <img src="../assets/img/default-avatar.jpg">
                                         </nuxt-link>
                                         <div class="info">
@@ -85,17 +85,17 @@
                                             </span>
                                         </div>
                                     </div>
-                                    <nuxt-link class="title" to="/p/123">佛系程序员的月薪五万指南</nuxt-link>
+                                    <nuxt-link class="title" to="/p/_id">佛系程序员的月薪五万指南</nuxt-link>
                                     <div class="abstruct">
                                         摘要：大师：很简单，我这里有一份佛系月薪 5 万指南，我看你骨骼清奇、脑门光亮，一看就是将要大富大贵之人，这份指南可以助你快速实现小目标！ 程序员问大师…… 青年：大师，你看...
                                     </div>
                                     <div class="meta">
                                         <nuxt-link to="/c/123" class="collection-tag">社会与法</nuxt-link>
-                                        <nuxt-link to="/p/123">
+                                        <nuxt-link to="/p/_id">
                                             <i class="fa fa-eye"></i>
                                             1500
                                         </nuxt-link>
-                                        <nuxt-link to="/p/123">
+                                        <nuxt-link to="/p/_id">
                                             <i class="fa fa-comment"></i>
                                             100
                                         </nuxt-link>
@@ -107,12 +107,12 @@
                                 </div>
                             </li>
                             <li class="have-img">
-                                <nuxt-link to="/p/123" class="wrap-img">
+                                <nuxt-link to="/p/_id" class="wrap-img">
                                     <img src="../assets/img/note.jpg">
                                 </nuxt-link>
                                 <div class="content">
                                     <div class="author">
-                                        <nuxt-link to="/p/123" class="avatar">
+                                        <nuxt-link to="/p/_id" class="avatar">
                                             <img src="../assets/img/default-avatar.jpg">
                                         </nuxt-link>
                                         <div class="info">
@@ -122,17 +122,17 @@
                                             </span>
                                         </div>
                                     </div>
-                                    <nuxt-link class="title" to="/p/123">佛系程序员的月薪五万指南</nuxt-link>
+                                    <nuxt-link class="title" to="/p/_id">佛系程序员的月薪五万指南</nuxt-link>
                                     <div class="abstruct">
                                         摘要：大师：很简单，我这里有一份佛系月薪 5 万指南，我看你骨骼清奇、脑门光亮，一看就是将要大富大贵之人，这份指南可以助你快速实现小目标！ 程序员问大师…… 青年：大师，你看...
                                     </div>
                                     <div class="meta">
                                         <nuxt-link to="/c/123" class="collection-tag">社会与法</nuxt-link>
-                                        <nuxt-link to="/p/123">
+                                        <nuxt-link to="/p/_id">
                                             <i class="fa fa-eye"></i>
                                             1500
                                         </nuxt-link>
-                                        <nuxt-link to="/p/123">
+                                        <nuxt-link to="/p/_id">
                                             <i class="fa fa-comment"></i>
                                             100
                                         </nuxt-link>
@@ -146,7 +146,7 @@
                             <li>
                                 <div class="content">
                                     <div class="author">
-                                        <nuxt-link to="/p/123" class="avatar">
+                                        <nuxt-link to="/p/_id" class="avatar">
                                             <img src="../assets/img/default-avatar.jpg">
                                         </nuxt-link>
                                         <div class="info">
@@ -156,17 +156,17 @@
                                             </span>
                                         </div>
                                     </div>
-                                    <nuxt-link class="title" to="/p/123">佛系程序员的月薪五万指南</nuxt-link>
+                                    <nuxt-link class="title" to="/p/_id">佛系程序员的月薪五万指南</nuxt-link>
                                     <div class="abstruct">
                                         摘要：大师：很简单，我这里有一份佛系月薪 5 万指南，我看你骨骼清奇、脑门光亮，一看就是将要大富大贵之人，这份指南可以助你快速实现小目标！ 程序员问大师…… 青年：大师，你看...
                                     </div>
                                     <div class="meta">
                                         <nuxt-link to="/c/123" class="collection-tag">社会与法</nuxt-link>
-                                        <nuxt-link to="/p/123">
+                                        <nuxt-link to="/p/_id">
                                             <i class="fa fa-eye"></i>
                                             1500
                                         </nuxt-link>
-                                        <nuxt-link to="/p/123">
+                                        <nuxt-link to="/p/_id">
                                             <i class="fa fa-comment"></i>
                                             100
                                         </nuxt-link>
@@ -210,73 +210,14 @@
                                 </nuxt-link>
                             </div>
                             <ul class="recommended-list">
-                                <li>
+                                <li v-for="(item,index) in arr" :key="index">
                                     <nuxt-link class="avatar" to="/u/123">
                                         <img src="../assets/img/default-avatar.jpg">
                                     </nuxt-link>
-                                    <a href="#" class="follow">
-                                        <i class="fa fa-plus"></i>
-                                        关注
-                                    </a>
-                                    <nuxt-link to="/u/123" class="name">
-                                        简书用户
-                                    </nuxt-link>
-                                    <p>
-                                        写了1958k字·1.9k喜欢
-                                    </p>
-                                </li>
-                                <li>
-                                    <nuxt-link class="avatar" to="/u/123">
-                                        <img src="../assets/img/default-avatar.jpg">
-                                    </nuxt-link>
-                                    <a href="#" class="follow">
-                                        <i class="fa fa-plus"></i>
-                                        关注
-                                    </a>
-                                    <nuxt-link to="/u/123" class="name">
-                                        简书用户
-                                    </nuxt-link>
-                                    <p>
-                                        写了1958k字·1.9k喜欢
-                                    </p>
-                                </li>
-                                <li>
-                                    <nuxt-link class="avatar" to="/u/123">
-                                        <img src="../assets/img/default-avatar.jpg">
-                                    </nuxt-link>
-                                    <a href="#" class="follow">
-                                        <i class="fa fa-plus"></i>
-                                        关注
-                                    </a>
-                                    <nuxt-link to="/u/123" class="name">
-                                        简书用户
-                                    </nuxt-link>
-                                    <p>
-                                        写了1958k字·1.9k喜欢
-                                    </p>
-                                </li>
-                                <li>
-                                    <nuxt-link class="avatar" to="/u/123">
-                                        <img src="../assets/img/default-avatar.jpg">
-                                    </nuxt-link>
-                                    <a href="#" class="follow">
-                                        <i class="fa fa-plus"></i>
-                                        关注
-                                    </a>
-                                    <nuxt-link to="/u/123" class="name">
-                                        简书用户
-                                    </nuxt-link>
-                                    <p>
-                                        写了1958k字·1.9k喜欢
-                                    </p>
-                                </li>
-                                <li>
-                                    <nuxt-link class="avatar" to="/u/123">
-                                        <img src="../assets/img/default-avatar.jpg">
-                                    </nuxt-link>
-                                    <a href="#" class="follow">
-                                        <i class="fa fa-plus"></i>
-                                        关注
+                                    <a @mouseover="one(item,index)" @mouseout="two(item,index)" @click="change(item,index)" href="#" :class="item.one" id="one0">
+                                            <i :class="item.icon"></i>
+                                        {{item.name}}
+                                        
                                     </a>
                                     <nuxt-link to="/u/123" class="name">
                                         简书用户
@@ -298,24 +239,68 @@
     </div>
 </template>
 <script>
-    import myHeader from  '../components/myHeader'
-    export default {
-        head:{
-            title:'简书-创作你的创作',
-            meta:[
-                {charset:'utf-8'},
-                {name:'keywords',content:'简书首页'},
-                {name:'description',content:'简书首页'},
-                {name:'author',content:'李志远'}
-            ]
-        },
-        components:{
-            myHeader
-        },
-        data () {
-            return {
-                name:'首页'
-            }
-        }
+import myHeader from "../components/myHeader";
+export default {
+  head: {
+    title: "简书-创作你的创作",
+    meta: [
+      { charset: "utf-8" },
+      { name: "keywords", content: "简书首页" },
+      { name: "description", content: "简书首页" },
+      { name: "author", content: "硕皇" }
+    ]
+  },
+  components: {
+    myHeader
+  },
+  data() {
+    return {
+      name: "首页",
+      arr: [
+        { name: "关注", icon: "fa fa-plus", one: "follow" },
+        { name: "关注", icon: "fa fa-plus", one: "follow" },
+        { name: "关注", icon: "fa fa-plus", one: "follow" }
+      ],
+      content: "关注"
+    };
+  },
+  methods: {
+    change(item, index) {
+      if (item.name == "关注") {
+        item.name = "已关注";
+        item.icon = "fa fa-check";
+        item.one = "follow-a";
+        this.arr.splice(index, 1, item);
+      } else {
+        item.name = "关注";
+        item.icon = "fa fa-plus";
+        item.one = "follow";
+        this.arr.splice(index, 1, item);
+      }
+    },
+    one(item, index) {
+      if (item.name == "已关注") {
+        item.name = "取消关注";
+        item.icon = "fa fa-close";
+      }
+    },
+    two(item, index) {
+      if (item.name == "取消关注") {
+        item.name = "已关注";
+        item.icon = "fa fa-check";
+      }
     }
+  },
+  mounted() {
+    var zhuan = document.querySelector(".fa-refresh");
+    zhuan.onclick = function() {
+      console.log("旋转");
+      zhuan.style.transform = "rotate(360deg)";
+      zhuan.style.transition = " 0.4s";
+      setTimeout(function() {
+        zhuan.style = "none";
+      }, 400);
+    };
+  }
+};
 </script>
