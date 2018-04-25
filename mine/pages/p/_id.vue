@@ -95,7 +95,7 @@
                             <i class="fa fa-weixin weixin"></i>
                         </a>
                         <a href="#" class="share-btn more-share">
-                            <!-- 更多分享 -->
+                            更多分享
                         </a>
                     </div>
                 </div>

@@ -211,14 +211,6 @@
     font-size:13px;
     color:#42c02e;
 }
-
-.index .aside .recommended-author .recommended-list li .follow-a {
-    margin-top:5px;
-    float:right;
-    font-size:13px;
-    color:gray;
-}
-
 .index .aside .recommended-author .recommended-list li .name {
     margin-right:60px;
     font-size:14px;
@@ -239,7 +231,7 @@
     color:#787878;
     text-align:center;
 }
-/* ****************************内页布局开始******************************* */
+/**************************内页布局开始*****************/
 .note {
     position:relative;
     padding-top:10px;
@@ -250,60 +242,63 @@
     margin:0 auto;
     width:620px;
 }
-.note .post .title {
+.note .post .article .title {
     font-size:34px;
     font-weight:700;
     margin-top:20px;
     word-break:break-word;
     line-height:1.3;
 }
-.note .post .author {
+.note .post .article .author {
     margin:30px 0 40px 0;
 }
-.note .post .avatar {
+.note .post .article .avatar {
     width:48px;
     height:48px;
     vertical-align: middle;
     display:inline-block;
 }
-.note .post .info {
+.note .post .article .info {
     display:inline-block;
     margin-left:10px;
     vertical-align: middle;
 }
-.note .post .info .name {
+.note .post .article .info .name {
     font-size:16px;
     vertical-align: middle;
     margin-right:5px;
 }
-.note .post .info .btn-follow {
+.note .post .article .info .btn-follow {
     display:inline-block;
     font-size:12px;
     padding:0 10px;
     vertical-align: middle;
-    background-color:#3db922;
+    background-color:rgb(66,192,46);
     color:#fff;
     border-radius: 40px;
 }
-.note .post .info .btn-follow span {
+.note .post .article .info .btn-follow:hover {
+    background:#3db922;
+}
+.note .post .article .info .btn-follow span {
     display:inline-block;
     margin-left:3px;
 }
-.note .post .info .meta {
+.note .post .article .info .meta {
     font-size:12px;
     color:#969696;
     margin-top:5px;
 }
-.note .post .info .meta span {
+.note .post .article .info .meta span {
     margin-right:5px;
 }
-.note .post .show-content {
+.note .post .article .show-content {
     font-size:16px;
     font-weight:400;
     line-height:1.7;
     color:#2f2f2f;
 }
-.note .post .show-content p {
+.note .post .article .show-content p {
     margin-bottom:25px;
 }
 .note .post .show-foot {
@@ -321,14 +316,23 @@
     font-size:12px;
     color:#c8c8c8;
 }
-
-.note .post .follow-detail .avatar{
-    width: 48px;
-    height: 48px;
-    display: inline-block;
-    margin-right: 10px;
+.note .post .follow-detail {
+    padding:20px;
+    font-size:12px;
+    border:1px solid #e1e1e1;
+    background:#f7f7f7;
+    vertical-align: middle;
 }
-.note .post .follow-detail .btn-follow{
+.note .post .follow-detail .info {
+    min-height:48px;
+}
+.note .post .follow-detail .avatar {
+    width:48px;
+    height:48px;
+    float:left;
+    margin-right:10px;
+}
+.note .post .follow-detail .btn-follow {
     float:right;
     width:100px;
     font-size:16px;
@@ -337,9 +341,7 @@
     color:#fff;
     border-radius: 20px;
     text-align:center;
-
 }
-
 .note .post .follow-detail .btn-follow:hover {
     background:#3db922;
 }
@@ -445,9 +447,3 @@ i.qq {
     text-align:center;
     color:#9b9b9b;
 }
-
-
-
-
-
-
