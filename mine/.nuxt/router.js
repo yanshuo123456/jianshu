@@ -3,34 +3,58 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
-const _0c4cad4d = () => import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */).then(m => m.default || m)
-const _d7633034 = () => import('..\\pages\\sign-up.vue' /* webpackChunkName: "pages/sign-up" */).then(m => m.default || m)
-const _7fb81170 = () => import('..\\pages\\sign-in.vue' /* webpackChunkName: "pages/sign-in" */).then(m => m.default || m)
-const _2b4c0adf = () => import('..\\pages\\p\\_id.vue' /* webpackChunkName: "pages/p-id" */).then(m => m.default || m)
+const _ab691c60 = () => import('..\\pages\\sign-up.vue' /* webpackChunkName: "pages_sign-up" */).then(m => m.default || m)
+const _d495c94c = () => import('..\\pages\\sign-in.vue' /* webpackChunkName: "pages_sign-in" */).then(m => m.default || m)
+const _2c1dc896 = () => import('..\\pages\\p\\_id.vue' /* webpackChunkName: "pages_p__id" */).then(m => m.default || m)
+const _22f729b7 = () => import('..\\pages\\index.vue' /* webpackChunkName: "pages_index" */).then(m => m.default || m)
 
 
 
-const scrollBehavior = (to, from, savedPosition) => {
-  // SavedPosition is only available for popstate navigations.
-  if (savedPosition) {
-    return savedPosition
-  } else {
-    let position = {}
-    // If no children detected
-    if (to.matched.length < 2) {
-      // Scroll to the top of the page
-      position = { x: 0, y: 0 }
-    }
-    else if (to.matched.some((r) => r.components.default.options.scrollToTop)) {
-      // If one of the children has scrollToTop option set to true
-      position = { x: 0, y: 0 }
-    }
-    // If link has anchor, scroll to anchor by returning the selector
-    if (to.hash) {
-      position = { selector: to.hash }
-    }
-    return position
+if (process.client) {
+  window.history.scrollRestoration = 'manual'
+}
+const scrollBehavior = function (to, from, savedPosition) {
+  // if the returned position is falsy or an empty object,
+  // will retain current scroll position.
+  let position = false
+
+  // if no children detected
+  if (to.matched.length < 2) {
+    // scroll to the top of the page
+    position = { x: 0, y: 0 }
+  } else if (to.matched.some((r) => r.components.default.options.scrollToTop)) {
+    // if one of the children has scrollToTop option set to true
+    position = { x: 0, y: 0 }
   }
+
+  // savedPosition is only available for popstate navigations (back button)
+  if (savedPosition) {
+    position = savedPosition
+  }
+
+  return new Promise(resolve => {
+    // wait for the out transition to complete (if necessary)
+    window.$nuxt.$once('triggerScroll', () => {
+      // coords will be used if no selector is provided,
+      // or if the selector didn't match any element.
+      if (to.hash) {
+        let hash = to.hash
+        // CSS.escape() is not supported with IE and Edge.
+        if (typeof window.CSS !== 'undefined' && typeof window.CSS.escape !== 'undefined') {
+          hash = '#' + window.CSS.escape(hash.substr(1))
+        }
+        try {
+          if (document.querySelector(hash)) {
+            // scroll to anchor by returning the selector
+            position = { selector: hash }
+          }
+        } catch (e) {
+          console.warn('Failed to save scroll position. Please add CSS.escape() polyfill (https://github.com/mathiasbynens/CSS.escape).')
+        }
+      }
+      resolve(position)
+    })
+  })
 }
 
 
@@ -43,26 +67,28 @@ export function createRouter () {
     scrollBehavior,
     routes: [
 		{
-			path: "/",
-			component: _0c4cad4d,
-			name: "index"
-		},
-		{
 			path: "/sign-up",
-			component: _d7633034,
+			component: _ab691c60,
 			name: "sign-up"
 		},
 		{
 			path: "/sign-in",
-			component: _7fb81170,
+			component: _d495c94c,
 			name: "sign-in"
 		},
 		{
 			path: "/p/:id?",
-			component: _2b4c0adf,
+			component: _2c1dc896,
 			name: "p-id"
+		},
+		{
+			path: "/",
+			component: _22f729b7,
+			name: "index"
 		}
     ],
+    
+    
     fallback: false
   })
 }
